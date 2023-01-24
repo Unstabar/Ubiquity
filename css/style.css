@@ -1,0 +1,328 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+header p {
+    font-family: Montserrat;
+}
+
+.options {
+    padding: 15px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.menu-liste {
+    display: flex;
+    padding: 1.5rem;
+    margin: 10px 10px;
+}
+
+.options:hover {
+    background-color: #F16822;
+    color: #fff;
+}
+
+.logo-liste-item {
+    background-color: #eee;
+    border-radius: 100px;
+    width: 125px;
+    height: 125px;
+}
+
+.logo {
+    max-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    display: flex;
+    width: auto;
+    height: 960px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../images/slider1.png);
+}
+
+.carousel h2 {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 64px;
+    color: #F16822;
+}
+
+.carousel p {
+    font-family: Montserrat;
+    font-size: 32px;
+}
+
+.carousel-services {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services-liste {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* .services img {
+    text-align: center;
+} */
+
+.services-liste-items {
+    width: 317px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.services h2,
+h3 {
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.services p {
+    font-family: Montserrat;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.what {
+    display: flex;
+    width: auto;
+    height: 913px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../images/bokehback.png);
+}
+
+
+.what p {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+.what h2 {
+    color: #F16822;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.latest-post {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+}
+
+.latest-post h2 {
+    font-family: Raleway;
+    font-weight: bold;
+    color: #F16822;
+}
+
+.latest-post .latest-post-desc {
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.posts h4 {
+    font-family: Raleway;
+    font-weight: bolder;
+    color: #F16822;
+    font-size: 40px;
+}
+
+.posts p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.blog-list {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    grid-auto-rows: auto;
+}
+
+.blog-list li {
+    width: 400px;
+    height: 602px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin-left: 50px;
+}
+
+.blog-list li img {
+    margin-left: 25px;
+}
+
+.fun-facts {
+    padding-top: 100px;
+    width: auto;
+    height: 642px;
+    text-align: center;
+    background-image: url(../images/fond_facts.png);
+    opacity: 1;
+}
+
+.fun-facts h2 {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fun-facts li h2 {
+    font-family: Montserrat;
+    color: #F16822;
+    font-size: 64px;
+}
+
+.fun-facts p {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.facts-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.amanda {
+    width: auto;
+    height: 600px;
+    background-image: url(../images/rect.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.amanda-content {
+    width: 1280px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.amanda h2 {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.amanda-image {
+    border-radius: 100px;
+}
+
+.amanda-desc {
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+footer {
+    padding-top: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    color: #ccc
+}
+
+.list-recent-post {
+    list-style: url(../images/style_list.svg);
+}
+
+footer h5 {
+    background-color: #444;
+    color: #ccc;
+    text-align: center;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+footer h5:hover {
+    background-color: #ccc;
+    color: #444;
+}
+
+footer h2 {
+    color: #F16822;
+    font-variant: small-caps;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+footer li {
+    font-family: Montserrat;
+    font-weight: lighter;
+}
+
+h5 {
+    font-family: Montserrat;
+}
+
+.contacts-items::before {
+    content: '';
+    position: relative;
+    top: .2rem;
+    left: 0;
+    display: inline flow-root list-item;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.adress::before {
+    background-image: url(../images/map_marker.svg);
+}
+
+.phone::before {
+    background-image: url(../images/phone.svg);
+}
+
+.mail::before {
+    background-image: url(../images/envelope.svg);
+}
