@@ -22,6 +22,11 @@ header p {
     font-family: Montserrat;
 }
 
+a {
+    text-decoration: none;
+    color: #333;
+}
+
 .options {
     padding: 15px;
     font-family: Montserrat;
@@ -32,13 +37,42 @@ header p {
     display: flex;
     padding: 1.5rem;
     margin: 10px 10px;
+
 }
 
-.options:hover {
+.options-link {
+    display: block;
+    /* padding: 1.5rem; */
+    text-decoration: none;
+    /* font-weight: 800; */
+    text-transform: uppercase;
+    /* margin: 0 10px; */
+    position: relative;
+}
+
+.options-link:hover {
+    /* background-color: #F16822; */
+    color: #eee;
+    z-index: 1;
+}
+
+.options-link::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
     background-color: #F16822;
-    color: #fff;
+    opacity: 0;
+    margin: auto;
 }
 
+.options-link:hover::after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+}
 
 .logo {
     max-width: 280px;
@@ -384,4 +418,23 @@ h5 {
 
 .mail::before {
     background-image: url(../images/envelope.svg);
+}
+
+
+@-webkit-keyframes fill {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #F16822;
+    }
 }
