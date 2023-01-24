@@ -39,12 +39,6 @@ header p {
     color: #fff;
 }
 
-.logo-liste-item {
-    background-color: #eee;
-    border-radius: 100px;
-    width: 125px;
-    height: 125px;
-}
 
 .logo {
     max-width: 280px;
@@ -90,9 +84,18 @@ header p {
     text-align: center;
 }
 
-/* .services img {
-    text-align: center;
+/* .logo-liste-item {
+    background-color: #eee;
+    border-radius: 100px;
+    width: 125px;
+    height: 125px;
 } */
+
+.services img {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
 
 .services-liste-items {
     width: 317px;
@@ -102,6 +105,36 @@ header p {
     align-items: center;
     padding: 5px;
 }
+
+
+.briefcase {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background: no-repeat #ccc url(../images/briefcase.svg) center;
+}
+
+.note {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background: no-repeat #ccc url(../images/notes.svg) center;
+}
+
+.star {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background: no-repeat #ccc url(../images/star.svg) center;
+}
+
+.bolt {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background: no-repeat #ccc url(../images/bolt.svg) center;
+}
+
 
 .services h2,
 h3 {
@@ -196,13 +229,29 @@ h3 {
     margin-left: 25px;
 }
 
+.facts-list {
+    padding-top: 50px;
+}
+
+.fun-facts::before {
+    content: " ";
+    background-image: url(../images/fond_facts.png);
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .fun-facts {
     padding-top: 100px;
     width: auto;
     height: 642px;
     text-align: center;
-    background-image: url(../images/fond_facts.png);
-    opacity: 1;
+    position: relative;
 }
 
 .fun-facts h2 {
@@ -278,6 +327,8 @@ footer h5 {
     text-align: center;
     font-weight: normal;
     font-variant: small-caps;
+    width: 90px;
+    height: 24px;
 }
 
 footer h5:hover {
@@ -299,6 +350,14 @@ footer li {
 
 h5 {
     font-family: Montserrat;
+}
+
+.tags-list {
+    width: 236px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
 }
 
 .contacts-items::before {
